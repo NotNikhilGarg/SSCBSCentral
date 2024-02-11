@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCBS Cultural Event Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        body{
+            background-image: url(banner.jpg);
+            background-size: cover;
+            background-position: inherit;
+            background-repeat: no-repeat;
+        }
+        .container{
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        select {
+            width: 400px;
+            height:30px;
+        }
+        #alan{font-family:cursive;
+            color: rgb(188, 30, 38);
+            text-shadow: 2px 2px 8px rgb(231, 235, 4);
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cultural Event<br><span id="alan">Alankrit</span> <br>Registration</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" required>
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+            <option value="" disabled selected>Please select your event</option>
+            <option value="dance">Dance</option>
+            <option value="music">Music</option>
+            <option value="talent ">Talent</option>
+            <option value="art">Art Exhibition</option>
+        </select>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+ 
+</body>
+</html>

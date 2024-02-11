@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCBS Cultural Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    right: 30%;
+    margin-top: 15  px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 13px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0 20px;
+    font-size: large;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 50px;
+}
+nav ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.logo {
+    float: left;
+    width: 74px;
+    display: inline;
+
+}
+nav img.logo {
+    vertical-align: middle;
+}
+
+section {
+    margin: 40px 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007BFF;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#title{
+    display: flex;
+    margin-left: 10px;
+    background: linear-gradient(90deg, red, orange, yellow, rgb(43, 183, 0), rgb(0, 130, 93), rgb(0, 213, 255), violet);
+    background-size: 25px 25px;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Arial', sans-serif;
+}
+
+#logoandtitle{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+
+}
+.card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 1600px;
+            width: 100%;
+            text-align: justify;
+        }
+
+</style>
+</head>
+<body>
+
+<header>
+    <div id="logoandtitle">
+        <img class="logo" src="AlankritLogo.png" alt="logo">
+        <h1 id="title">Alankrit</h1>
+
+
+
+    </div>
+    <nav>
+        
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#registration"><a href="registration form.html" target="_blank">Registration</a></a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="fixedImage">
+        <img src="cul3.jpg" alt="Fixed Image" width="100%">
+    </div>
+
+
+    <section id="about">
+        <h2 >About the Event</h2>
+        <div class="card">
+            <p id="about_P">Welcome to the SSCBS Cultural Event! Join us for a day filled with exciting performances, art exhibitions, and much more.
+                Alankrit, a celebration of culture and creativity that transcends boundaries. Alankrit, meaning 'adorned' in Sanskrit, embodies the essence of 
+                artistic expression and traditional magnificence. Our event is a vibrant tapestry woven with the threads of dance, music, art, and heritage. Join us on a journey where
+                 diverse cultures converge, fostering understanding and appreciation. Alankrit is not just an event; it's a cultural odyssey that aims to unite communities through the
+                  richness of their traditions. Come, be a part of this cultural mosaic, where every brushstroke, every note, and every step tells a unique story.
+            </p>
+        </div>
+    </section>
+    
+    <section id="events">
+        <h2>Events</h2>
+        <ul>
+            <li>Dance Competition</li>
+            <li>Music Concert</li>
+            <li>Art Exhibition</li>
+            <li>Talent</li>
+        </ul>
+    </section>
+    
+    <section id="registration">
+        <h2>For Registration <button onclick="handleClick()"><a href="registration form.html" target="_blank" id="button">Click Here</button></a></h2>
+        
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out:</p>
+        <address>
+            Email: <a href="mailto:info@sscbsevent.com">info@sscbsevent.com</a><br>
+            Phone:<a href="tel:+91-11-12345678">+91-11-12345678</a>
+            <br>
+            <br>
+            <hr>
+        </address>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 SSCBS Cultural Event</p>
+</footer>
+
+</body>
+</html>
